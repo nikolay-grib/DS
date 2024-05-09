@@ -1,8 +1,8 @@
 def numeral_noun_declension(
     number,
-    nominative_singular,    # существительное в именительном падеже
-    genetive_singular,      # существительное в родительном падеже единственного числа
-    nominative_plural       # существительное в родительном падеже множественного числа
+    nominative_singular,    # СЃСѓС‰РµСЃС‚РІРёС‚РµР»СЊРЅРѕРµ РІ РёРјРµРЅРёС‚РµР»СЊРЅРѕРј РїР°РґРµР¶Рµ
+    genetive_singular,      # СЃСѓС‰РµСЃС‚РІРёС‚РµР»СЊРЅРѕРµ РІ СЂРѕРґРёС‚РµР»СЊРЅРѕРј РїР°РґРµР¶Рµ РµРґРёРЅСЃС‚РІРµРЅРЅРѕРіРѕ С‡РёСЃР»Р°
+    nominative_plural       # СЃСѓС‰РµСЃС‚РІРёС‚РµР»СЊРЅРѕРµ РІ СЂРѕРґРёС‚РµР»СЊРЅРѕРј РїР°РґРµР¶Рµ РјРЅРѕР¶РµСЃС‚РІРµРЅРЅРѕРіРѕ С‡РёСЃР»Р°
 ):
     return (
         (number in range(5, 20)) and nominative_plural or
@@ -10,4 +10,4 @@ def numeral_noun_declension(
         ({number, diglast} & {2, 3, 4}) and genetive_singular or nominative_plural
     )
 
-print("В строке", a:=len(input("Введите строку: ")), numeral_noun_declension(a, 'символ', 'символа', 'символов'))
+print("Р’ СЃС‚СЂРѕРєРµ", a:=len(input("Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ: ")), numeral_noun_declension(a, 'СЃРёРјРІРѕР»', 'СЃРёРјРІРѕР»Р°', 'СЃРёРјРІРѕР»РѕРІ'))
