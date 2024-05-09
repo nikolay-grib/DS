@@ -1,8 +1,8 @@
 def numeral_noun_declension(
     number,
-    nominative_singular,
-    genetive_singular,
-    nominative_plural
+    nominative_singular,    # существительное в именительном падеже
+    genetive_singular,      # существительное в родительном падеже единственного числа
+    nominative_plural       # существительное в родительном падеже множественного числа
 ):
     return (
         (number in range(5, 20)) and nominative_plural or
